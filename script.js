@@ -57,7 +57,7 @@ function abrirfesta(botao) {
       tipoDeBotao = `<div class="content">
           <img src="./img/bolo-nozes.JPG" alt="bolo de nozes">
           <div class="content_text">
-          <p>Bolo de nizes</p>
+          <p>Bolo de nozes</p>
           <p>Bolo branco com recheio de creme gelado e doce de leite com nozes, cobertura de marshmallow e nozes.</p>
           </div>
           <p class="fechar" onclick="fechar()"> fechar </p>
