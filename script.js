@@ -118,7 +118,7 @@ function abrirfesta(botao) {
   }
 
   if (div_festa.style.height === "0px") {
-    div_festa.style.height = "345px";
+    div_festa.style.height = "300px";
     div_festa.style.padding = "20px";
     div_festa.innerHTML = tipoDeBotao;
   } else {
@@ -199,7 +199,7 @@ function abrircaseiro(botao) {
   }
 
   if (div_caseiro.style.height === "0px") {
-    div_caseiro.style.height = "345px";
+    div_caseiro.style.height = "200px";
     div_caseiro.style.padding = "20px";
     div_caseiro.innerHTML = tipoDeBotao;
   } else {

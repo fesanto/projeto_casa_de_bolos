@@ -15,21 +15,22 @@ h1 {
   color: #26223b;
 }
 
-.btn_festa {
+.btn_festa, .btn_caseiro {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
 }
 
+/* 
 .btn_caseiro {
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 a {
   padding: 20px;
@@ -55,7 +56,7 @@ a {
 
 .container_festa>div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -73,12 +74,13 @@ a {
 .container_caseiro>div {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .content {
   display: flex;
   background-color: #5db0ad59;
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   position: relative;
   padding: 30px;
@@ -90,11 +92,19 @@ a {
   width: 50%;
   height: auto;
   display: block;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .container_caseiro>.content>img {
   width: 40%;
+}
+
+.container_caseiro>.content {
+  padding: 30px 0;
+}
+
+.container_caseiro>.content>.content_text p:nth-child(1) {
+  padding: 15px 0 0 0;
 }
 
 .content p:nth-child(3) {
@@ -110,19 +120,20 @@ a {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 
 .content_text p {
   background-color: transparent;
+  font-size: 0.9rem;
 }
 
 .content_text p:nth-child(1) {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  width: 50%;
+  /* width: 50%; */
   position: relative;
-  padding: 0 0 15px 0;
+  padding: 15px 0;
 }
 
 .container_caseiro>.content>.content_text p {
@@ -182,7 +193,7 @@ input, textarea {
   border-radius: 5px;
   padding: 5px;
   margin-top: 5px;
-  background-color:rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 label {
@@ -210,4 +221,20 @@ button {
   font-size: 12px;
   padding-top: 20px;
   text-align: right;
+}
+
+@media (min-width: 408px) {
+  h1 {
+    padding: 60px 50px;
+  }
+}
+
+@media (min-width: 765px) {
+  h1 {
+    padding: 60px 50px;
+  }
+  .btn_festa, .btn_caseiro {
+    flex-direction: inherit;
+    justify-content: space-around;
+  }
 }
