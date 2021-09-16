@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #FAFFBD;
+  background-color: #f8e0de;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -10,9 +10,9 @@
 h1 {
   font-family: 'WindSong', cursive;
   text-align: center;
-  font-size: 70px;
+  font-size: 3rem;
   padding: 60px 0;
-  color: #5DB0AD;
+  color: #26223b;
 }
 
 .btn_festa {
@@ -20,6 +20,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .btn_caseiro {
@@ -27,16 +28,18 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 a {
   padding: 20px;
-  margin: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
   font-size: 16px;
-  background-color: #f3a4b975;
-  color: rgb(61, 61, 61);
+  background-color: #d38c88;
+  color: #26223b;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 2px solid #26223b;
   border-radius: 5px;
 }
 
@@ -80,7 +83,7 @@ a {
   position: relative;
   padding: 30px;
   border-radius: 5px;
-  border: 2px solid #fff;
+  border: 2px solid #fefefe;
 }
 
 .content>img {
@@ -138,10 +141,15 @@ a {
   text-align: left;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 }
 
 .box>div:nth-child(1) {
-  width: 50%;
+  /* width: 50%; */
+}
+
+.box>div:nth-child(2) {
+  margin: 0 auto;
 }
 
 .box>div:nth-child(2)>p {
@@ -149,11 +157,15 @@ a {
   padding-bottom: 20px;
 }
 
+.box>div:nth-child(2)>h2 {
+  padding-top: 50px;
+}
+
 h2 {
   text-align: center;
   padding: 15px 0 30px;
-  color: #5DB0AD;
-  font-size: 22px;
+  color: #26223b;
+  font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
@@ -179,7 +191,7 @@ label {
 
 button {
   font-size: 15px;
-  background-color: #5DB0AD;
+  background-color: #26223b;
   color: #fff;
   padding: 8px 30px;
   margin: 10px 0 0 0;
